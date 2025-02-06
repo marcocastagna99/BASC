@@ -1,0 +1,22 @@
+# Ignore .vscode folder
+.vscode/
+
+# Ignore Capstone files
+capstone/
+*.o
+*.so
+*.a
+*.dSYM
+
+# Ignore compilation and object files
+*.out
+*.exe
+*.class
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore backup files
+*~
+*.bak
