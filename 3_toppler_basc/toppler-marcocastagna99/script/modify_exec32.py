@@ -46,7 +46,7 @@ def infinite_lives(original_file):
     
     # Step 2: Define the offset and the bytes to insert
     target_offset =  0xe417  # Offset of the SUB instruction
-    nop_bytes = b'\x90\x90\x90'  # NOP instruction (0x90)
+    nop_bytes = b'\x90\x90\x90\x90\x90\x90\x90'  # NOP instruction (0x90)
     
     # Step 3: Modify the copied executable
     modify_executable(modified_file, target_offset, nop_bytes)

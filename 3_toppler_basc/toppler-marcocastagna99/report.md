@@ -25,12 +25,14 @@ void pts_died(void)
 #### Assembly Code Before Modification:
 ```assembly
 08056417 83  2d  9c       SUB        dword ptr [lifes ],0x1   ; Decrement lives by 1
+         91 06 08 01
 0805641e c3              RET
 ```
 
 #### Assembly Code After Modification (NOP added to prevent life decrement):
 ```assembly
-08056417 90    NOP NOP NOP NOP NOP NOP NOP        ; No operation, prevents the decrement
+08056417 90 90 90   NOP NOP NOP NOP NOP NOP NOP        ; No operation, prevents the decrement
+         90  90 90 90
 0805641e c3              RET
 ```
 
